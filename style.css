@@ -5,6 +5,7 @@
   --accent-color: #ffcc00;
   --accent-hover: #e9d68a;
   --animation-blur: blur;
+  --index: calc(1vw + 1vh);
 }
 
 @font-face {
@@ -82,6 +83,7 @@ body {
   left: 0;
   bottom: 0;
   overflow: hidden;
+  opacity: 0;
 }
 
 .jellyfish {
@@ -171,6 +173,7 @@ body {
   top: 0;
   left: 0;
   z-index: 10;
+  opacity: 0;
 }
 
 .nav {
@@ -285,6 +288,7 @@ body {
   height: 12%;
   z-index: 5;
   background-color: var(--carousel-color);
+  opacity: 0;
 }
 .carousel__fill {
   position: absolute;
@@ -439,4 +443,42 @@ body {
   100% {
     filter: saturate(1);
   }
+}
+
+.national {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: calc(var(--index) * 2.8);
+  position: absolute;
+  font-weight: 200;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  text-wrap: nowrap;
+  opacity: 0.9;
+  margin-top: 4em;
+  color: var(--carousel-color);
+  z-index: 40;
+}
+
+.national span {
+  display: block;
+  font-size: calc(var(--index) * 0.75);
+  margin-top: 5px;
+}
+
+.loaded .swiper {
+  opacity: 1;
+}
+.loaded .carousel {
+  opacity: 1;
+}
+.loaded .header {
+  opacity: 1;
+}
+.loaded .national {
+  opacity: 0;
+}
+.loaded .national span {
+  opacity: 0;
 }

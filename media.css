@@ -157,6 +157,9 @@
   }
 }
 @media (max-width: 650px) {
+  .national {
+    text-wrap: wrap;
+  }
   .shark {
     width: 265%;
     top: -10%;
