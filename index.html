@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/Jellyfish.jpg" class="jellyfish" id="jellyfish" />
+          <div class="swiper-slide__after"></div>
+          <div class="jellyfish__title">
+            <h1 class="jellyfish__text">Exotic Jellyfish</h1>
+            <div class="jellyfish__play">
+              <div class="jellyfish__play-button">
+                <img src="./icons/play_arrow.svg" alt="play-icon" class="jellyfish__play-icon" />
+                <p class="jellyfish__play-text">Watch trailer</p>
+              </div>
+              <p class="jellyfish__time">60 min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/Shark.jpg" class="shark" />
+          <img src="./img/Shark__after-blur.jpg" alt="shark" class="shark__after-blur" />
+
+          <div class="swiper-slide__after"></div>
+          <div class="jellyfish__title">
+            <h1 class="jellyfish__text">Deep Sea Dive</h1>
+            <div class="jellyfish__play">
+              <div class="jellyfish__play-button">
+                <img src="./icons/play_arrow.svg" alt="play-icon" class="jellyfish__play-icon" />
+                <p class="jellyfish__play-text">Watch trailer</p>
+              </div>
+              <p class="jellyfish__time">60 min</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Lizard.jpg" class="lizard" />
+          <div class="lizard__after"></div>
+          <div class="jellyfish__title">
+            <h1 class="jellyfish__text">In Plain Sight</h1>
+            <div class="jellyfish__play">
+              <div class="jellyfish__play-button">
+                <img src="./icons/play_arrow.svg" alt="play-icon" class="jellyfish__play-icon" />
+                <p class="jellyfish__play-text">Watch trailer</p>
+              </div>
+              <p class="jellyfish__time">60 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <nav class="nav">
+        <a href="/">
+          <div class="nav__logo">
+            <img src="./icons/Rectangle.svg" alt="logo" />
+            <img src="./icons/logo.svg" alt="logo" class="nav__logo-text" />
+          </div>
+        </a>
+
+        <div class="nav__right">
+          <ul class="nav__menu">
+            <li class="nav__link"><a href="#">Home</a></li>
+            <li class="nav__link"><a href="#">Shows</a></li>
+            <li class="nav__link"><a href="#">Movies</a></li>
+            <li class="nav__link"><a href="#">Live TV</a></li>
+            <div class="nav__line">|</div>
+          </ul>
+
+          <ul class="nav__login-menu">
+            <li class="nav__link"><a href="#">Login</a></li>
+            <img src="./icons/search.svg" alt="search-icon" class="nav__search" />
+          </ul>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="carousel">
+        <div class="carousel__blocks">
+          <div class="carousel__block">
+            <div class="carousel__fill carousel__fill_active"></div>
+
+            <div class="carousel__number margin">01</div>
+            <div class="carousel__text">
+              <h2 class="carousel__title carousel__title_active">Exotic Jellyfish</h2>
+              <p class="carousel__time carousel__time_active">EVERY TUESDAY | 6PM</p>
+            </div>
+          </div>
+          <div class="carousel__block">
+            <div class="carousel__fill"></div>
+            <div class="carousel__number margin">02</div>
+            <div class="carousel__text">
+              <h2 class="carousel__title">Deep Sea Dive</h2>
+              <p class="carousel__time">EVERY FRIDAY | 8PM</p>
+            </div>
+          </div>
+          <div class="carousel__block">
+            <div class="carousel__fill"></div>
+            <div class="carousel__number margin">03</div>
+            <div class="carousel__text">
+              <h2 class="carousel__title">In Plain Sight</h2>
+              <p class="carousel__time">JULY 27 | 6PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
